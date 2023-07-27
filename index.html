@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jesus Alberto</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.6435-9/126407381_10224269927166282_3064054656563570824_n.jpg?_nc_cat=110&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEfJ05OrCRqInd64O9KeN7hYjiTpAz4sfFiOJOkDPix8U0jaK2dxVTsdQ8X5iAJfNc&_nc_ohc=cNzNbchmxFsAX8bfj6g&_nc_ht=scontent-qro1-1.xx&oh=00_AfAmI8ANiuaFVBkD-rNMCjUSqzdiXzVWIYnstQgcCSS73Q&oe=64E69225" alt="foto personal">
+            </div>
+            <h1>Jesus Alberto Mejorada Pérez</h1>
+            <h2>Diseñador Gráfico</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/jesus.alberto.18488"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/bto_02"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jesus-alberto-m-3322b1b1/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jesus Alberto</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, unde facere obcaecati, vero error similique velit architecto temporibus blanditiis a consequuntur est. Dolore.</p>
+        
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            26 - 09 - 1993
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +52 771 384 1828
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            albto02@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Parque de Poblamiento, 42032 Pachuca de Soto, Hgo.
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Diseñador Gráfico</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Mac OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotografía</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            <span>Rompecabezas</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenudo-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <!-- IZQUIERDA -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Diseño Gráfico</h4>
+                        <div class="casa">Instituto Tecnologico Latinoamericano</div>
+                        <div class="fecha">2012 a 2015</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla. Magnam quis nemo similique necessitatibus minima vero repudiandae excepturi aperiam tenetur, expedita illum tempora enim.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Especialidad Diseño Gradico en Diseño Publicitario</h4>
+                        <div class="casa">Instituto Tecnologico Latinoamericano</div>
+                        <div class="fecha">2016 a 2016</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla. Magnam quis nemo similique necessitatibus minima vero repudiandae excepturi aperiam tenetur, expedita illum tempora enim.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- DERECHA -->
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Auxiliar Diseño gráfico</h4>
+                        <div class="casa">Yeah publicidad</div>
+                        <div class="fecha">2016 a 2017</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla. Magnam quis nemo similique necessitatibus minima vero repudiandae excepturi aperiam tenetur, expedita illum tempora enim.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Administrador de redes sociales</h4>
+                        <div class="casa">Kingo Mkt</div>
+                        <div class="fecha">2017 a 2018</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla. Magnam quis nemo similique necessitatibus minima vero repudiandae excepturi aperiam tenetur, expedita illum tempora enim.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Auxiliar Diseño gráfico</h4>
+                        <div class="casa">Yeah publicidad</div>
+                        <div class="fecha">2018 a 2023</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla. Magnam quis nemo similique necessitatibus minima vero repudiandae excepturi aperiam tenetur, expedita illum tempora enim.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="https://images.pexels.com/photos/7014939/pexels-photo-7014939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <div class="overlay">
+                        <h3>Diseñador Gráfico</h3>
+                        <p>Edición de fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://images.pexels.com/photos/3966277/pexels-photo-3966277.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+                    <div class="overlay">
+                        <h3>Diseñador Gráfico</h3>
+                        <p>Serigrafía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://images.pexels.com/photos/17202841/pexels-photo-17202841/free-photo-of-hombre-camara-fotografo-fotografia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <div class="overlay">
+                        <h3>Diseñador Gráfico</h3>
+                        <p>Toma de fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://images.pexels.com/photos/2818118/pexels-photo-2818118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    <div class="overlay">
+                        <h3>Diseñador Gráfico</h3>
+                        <p>Redes sociales</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://images.pexels.com/photos/7598018/pexels-photo-7598018.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+                    <div class="overlay">
+                        <h3>Diseñador Gráfico</h3>
+                        <p>Papelería básica</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+                    <div class="overlay">
+                        <h3>Diseñador Gráfico</h3>
+                        <p>Diseño de paginas web</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="https://images.pexels.com/photos/1805138/pexels-photo-1805138.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Pachuca, Hidalgo.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 771 384 1828
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: albto02@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/jesus.alberto.18488"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/bto_02"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jesus-alberto-m-3322b1b1/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
